@@ -1,0 +1,12 @@
+{
+  "name": "assert-equals-exercise",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "tdd": "node tdd/tdd-workflow.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
