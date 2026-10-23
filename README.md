@@ -1,6 +1,3 @@
-# assertEquals: running the tests
-
-A deep-equality `assertEquals(expected, actual)` built test-first with Jest. It throws an `Error` describing the first difference it finds, including the path to the difference (for example `Expected propB.propA[1].propB "b" but found "c"`).
 
 ## Prerequisites
 
@@ -137,12 +134,4 @@ git checkout main                     # return to the end
 | `fatal: detected dubious ownership` | Run `git config --global --add safe.directory "$(pwd)"` |
 | Jest reports "no tests found" | The test file name must end in `.test.js` |
 
-## What is covered
 
-- Primitives: strings, numbers, booleans, `null`, `undefined`, `NaN`, `Infinity`
-- Type mismatches without coercion (`1` vs `'1'`, `null` vs `undefined`, `null` vs `{}`)
-- Arrays: length, order, nesting and the index in error paths
-- Objects: key order ignored, missing and unexpected properties, own properties only
-- Deeply nested structures with full dotted and indexed error paths
-- Dates, including invalid dates
-- Circular references, and repeated (non-circular) references
